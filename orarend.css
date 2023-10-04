@@ -1,0 +1,75 @@
+body{
+    background-color: #3498db;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px; 
+    overflow: hidden; 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+}
+
+th, td {
+    border: 1px solid transparent; 
+    padding: 12px;
+    text-align: center;
+    background-color: #3498db; 
+    color: #fff; 
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-color: rgb(233, 192, 192);
+}
+
+th:hover, td:hover {
+    background-color: #e74c3c; 
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5); 
+    color: #fff; 
+}
+
+
+th {
+    background-color: #2980b9; 
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    table {
+        border-radius: 0;
+    }
+    th, td {
+        padding: 8px;
+    }
+}
+
+
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(800%);
+    }
+}
+
+h2 {
+    position: absolute;
+    animation: slide 5s linear infinite;
+    
+    color: white; /* Betűszíne: piros */
+    padding-top: 600px;
+    font-size: 50px;
+}
+
+/* Adjuk hozzá az alábbi CSS-t a stíluslapunkhoz (orarend.css) */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
