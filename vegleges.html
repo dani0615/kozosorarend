@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="orarend.css">
+    <title>Órarend</title>
+</head>
+
+<body>
+    <div class="table-container">
+        <h2>Órarend</h2>
+        <table>
+            <tr>
+                <th></th>
+                <th>Hétfő</th>
+                <th>Kedd</th>
+                <th>Szerda</th>
+                <th>Csütörtök</th>
+                <th>Péntek</th>
+            </tr>
+            <tr>
+                <td class="fade-in">0. óra <br>07:15-08:00 </td>
+                <td class="fade-in"></td>
+                <td class="fade-in">Angol <br>Almásiné Jobbágy Nóra Katalin</td>
+                <td class="fade-in"></td>
+                <td class="fade-in"></td>
+                <td class="fade-in">Webprogramozás <br>Farkas Zoltán</td>
+            </tr>
+            <tr>
+                <td class="fade-in">1. óra <br>08:00-08:45 </td>
+                <td class="fade-in">Magyar <br>Halászné Kiss Melinda Ottila</td>
+                <td class="fade-in">Magyar <br>Halászné Kiss Melinda Ottila</td>
+                <td class="fade-in">Asztali alkalmazások <br>Szilágyi Bertalan</td>
+                <td class="fade-in"></td>
+                <td class="fade-in">Webprogramozás <br>Farkas Zoltán</td>
+            </tr>
+            <tr>
+                <td class="fade-in">2. óra <br> 08:45-09:40 </td>
+                <td class="fade-in">Fizika <br>Péterffy Gáspár Mátyás</td>
+                <td class="fade-in">Magyar <br>Halászné Kiss Melinda Ottila</td>
+                <td class="fade-in">Asztali alkalmazások <br>Szilágyi Bertalan</td>
+                <td class="fade-in">Történelem <br>Vasók Krisztián</td>
+                <td class="fade-in">Webprogramozás <br>Farkas Zoltán</td>
+            </tr>
+            <tr>
+                <td class="fade-in">3. óra <br>09:50-10:35 </td>
+                <td class="fade-in">Történelem <br>Vasók Krisztián</td>
+                <td class="fade-in">Fizika <br>Péterffy Gáspár Mátyás</td>
+                <td class="fade-in">Asztali alkalmazások <br>Szilágyi Bertalan</td>
+                <td class="fade-in">Matek <br>Dr Takácsné Menyhért Éva Judit</td>
+                <td class="fade-in">Adatbázisok <br>Szilágyi Bertalan</td>
+            </tr>
+            <tr>
+                <td class="fade-in">4. óra <br>10:45-11:30 </td>
+                <td class="fade-in">Matek <br>Dr Takácsné Menyhért Éva Judit</td>
+                <td class="fade-in">Tesi <br>Deményi Norbert Szabolcs</td>
+                <td class="fade-in">Szakmai Angol <br>Sándor Mária</td>
+                <td class="fade-in">Angol <br>Almásiné Jobbágy Nóra Katalin</td>
+                <td class="fade-in">Adatbázisok <br>Szilágyi Bertalan</td>
+            </tr>
+            <tr>
+                <td class="fade-in">5. óra <br>11:40-12:25 </td>
+                <td class="fade-in">Angol <br>Almásiné Jobbágy Nóra Katalin</td>
+                <td class="fade-in">Történelem <br>Vasók Krisztián</td>
+                <td class="fade-in">Szakmai Angol <br>Sándor Mária</td>
+                <td class="fade-in">Osztályfőnöki <br>Halászné Kiss Melinda Ottila</td>
+                <td class="fade-in">IKT <br>Paár Norbert</td>
+            </tr>
+            <tr>
+                <td class="fade-in">6. óra <br>12:45-13:30 </td>
+                <td class="fade-in"></td>
+                <td class="fade-in">Matek <br>Dr Takácsné Menyhért Éva Judit</td>
+                <td class="fade-in">IKT <br>Paár Norbert </td>
+                <td class="fade-in">Magyar <br>Halászné Kiss Melinda Ottila</td>
+                <td class="fade-in">IKT <br>Paár Norbert</td>
+            </tr>
+            <tr>
+                <td class="fade-in">7. óra <br> 13:35-14:20 </td>
+                <td class="fade-in"></td>
+                <td class="fade-in">Matek <br>Dr Takácsné Menyhért Éva Judit</td>
+                <td class="fade-in">IKT <br>Paár Norbert</td>
+                <td class="fade-in">Tesi <br>Deményi Norbert Szabolcs</td>
+                <td class="fade-in"></td>
+            </tr>
+            <tr>
+                <td class="fade-in">8. óra <br>14:25-15:10 </td>
+                <td class="fade-in"></td>
+                <td class="fade-in"></td>
+                <td class="fade-in"></td>
+                <td class="fade-in">Tesi <br>Deményi Norbert Szabolcs</td>
+                <td class="fade-in"></td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    const tableCells = document.querySelectorAll('.fade-in');
+
+    tableCells.forEach(function (cell, index) {
+        setTimeout(function () {
+            cell.classList.add('show'); // Hozzáadja a 'show' osztályt a cellához
+        }, index * 100);
+    });
+});
+
+    </script>
+</body>
+</html>
